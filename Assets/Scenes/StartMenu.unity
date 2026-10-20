@@ -426,7 +426,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: Level1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &484710103
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 544159098}
   - component: {fileID: 544159097}
   - component: {fileID: 544159096}
+  - component: {fileID: 544159100}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -573,6 +574,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &544159100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544159095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1e4a11b6406d24495bcbfb6701047c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuCursor
 --- !u!1 &958188117
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +612,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 958188117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c734f160510096b459f5b012cb75e633, type: 3}
+  m_Script: {fileID: 11500000, guid: 6034ee7d12c9b0d43afe8b25e78885c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
 --- !u!4 &958188119

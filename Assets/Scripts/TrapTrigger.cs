@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class TrapTrigger : MonoBehaviour
@@ -8,6 +9,18 @@ public class TrapTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(1);
+
+                if (playerHealth.CurrentHealth <= 0)
+                {
+                    return;
+                }
+            }
+
             other.transform.position = respawnPoint.position;
             Debug.Log("You hit a trap! Back to start.");
         }

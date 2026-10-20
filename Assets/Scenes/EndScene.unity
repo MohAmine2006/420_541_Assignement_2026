@@ -382,7 +382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd766abd2013144a9be735a24922244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  finalScoreText: {fileID: 317279805}
 --- !u!4 &56597563
 Transform:
   m_ObjectHideFlags: 0
@@ -517,7 +516,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 273923531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c734f160510096b459f5b012cb75e633, type: 3}
+  m_Script: {fileID: 11500000, guid: 6034ee7d12c9b0d43afe8b25e78885c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
 --- !u!4 &273923533
@@ -872,7 +871,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Level Complete! '
+  m_text: 'Stage Complete! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1177,7 +1176,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: Level1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1980888713
@@ -1230,6 +1229,8 @@ GameObject:
   - component: {fileID: 2019390206}
   - component: {fileID: 2019390205}
   - component: {fileID: 2019390204}
+  - component: {fileID: 2019390208}
+  - component: {fileID: 2019390209}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1325,6 +1326,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2019390208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019390203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae53c15c1c543c4f9fd2c5a3f0bd441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDController
+  powerUps: {fileID: 0}
+  scoreText: {fileID: 317279805}
+--- !u!114 &2019390209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019390203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1e4a11b6406d24495bcbfb6701047c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuCursor
 --- !u!1 &2102563838
 GameObject:
   m_ObjectHideFlags: 0
